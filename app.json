@@ -1,0 +1,17 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ],
+  "description": "",
+  "env": {
+  },
+  "formation": {
+  },
+  "name": "data-table-react-redux",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
