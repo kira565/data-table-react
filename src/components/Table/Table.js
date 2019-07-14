@@ -2,10 +2,10 @@ import React from 'react'
 import styles from './data-table.module.css'
 import AddData from "./data_add-item/addData-item";
 import Description from "./description-item/description-item";
-import AddDataForm from "./data_add__form-item/data_add_form-item";
 import Preloader from "../common/preloader/Preloader";
 import CustomTable from "./custom-table/CustomTable";
 import close from '../../../src/etc/img/stop.png'
+import DataAddBlock from "./data_add__form-item/data_add_form-item";
 
 
 const Table = (props) => {
@@ -24,7 +24,7 @@ const Table = (props) => {
             <div>{
                     props.isFormActive  && <div className={styles.table_interface__block}>
                         <div className={styles.close}><img onClick={()=>{props.showForm(false)}} alt={close} src={close}/></div>
-                        <AddDataForm addUserToDataBase = {props.addUserToDataBase}/>
+                        <DataAddBlock dataAddedSuccessful={props.dataAddedSuccessful} addUserToDataBase = {props.addUserToDataBase}/>
                     </div>}
             </div>
             <div className="btn-group" role="group" aria-label="Basic example">

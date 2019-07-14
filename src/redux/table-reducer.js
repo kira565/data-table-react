@@ -5,6 +5,7 @@ const SET_SMALL_DATABASE = 'SET_SMALL_DATABASE';
 const ADD_USER_TO_DATABASE = 'ADD_USER_TO_DATABASE';
 const SHOW_FORM = 'SHOW_FORM';
 const TOGGLE_FETCHER = 'TOGGLE_FETCHER';
+export const DATA_SAVE_SUCCESS = 'DATA_SAVE_SUCCESS';
 
 let initialState = {
     userData: [],
@@ -61,6 +62,7 @@ export const setSmallData = (data) => ({type: SET_SMALL_DATABASE, data});
 export const setBigData = (data) => ({type: SET_BIG_DATABASE, data});
 export const toggleFetcher = (isFetching) => ({type: TOGGLE_FETCHER, isFetching});
 export const addUserToDataBase = (user) => ({type: ADD_USER_TO_DATABASE, user});
+export const dataAddedSuccessful = () => ({type: DATA_SAVE_SUCCESS});
 
 //thunk
 
